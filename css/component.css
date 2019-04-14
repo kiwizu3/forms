@@ -104,8 +104,8 @@
 	padding: 0.5em 1em 0.5em 0.7em;
 	width: calc(100% - 2em);
 	border: none;
-	background: transparent;
-	color: rgba(0,0,0,0.8);
+	background:transparent;
+	color: rgb(255, 255, 255);
 	font-size: 1em;
 	line-height: 1;
 	opacity: 0;
@@ -134,7 +134,7 @@
 	height: 2em;
 	border: none;
 	background: none;
-	color: rgba(0,0,0,0.4);
+	color: rgb(255, 255, 255);
 	text-align: center;
 	opacity: 0;
 	z-index: 100;
@@ -148,7 +148,7 @@
 }
 
 .next:hover {
-	color: rgba(0,0,0,0.5);
+	color: rgb(255, 255, 255);
 }
 
 .next::after {
@@ -180,7 +180,7 @@
 .simform .progress {
 	width: 0%;
 	height: 0.15em;
-	background: rgba(0,0,0,0.3);
+	background: rgb(255, 255, 255);
 	-webkit-transition: width 0.4s ease-in-out;
 	transition: width 0.4s ease-in-out;
 }
@@ -190,7 +190,7 @@
 	top: auto;
 	width: 100%;
 	height: inherit;
-	background: rgba(0,0,0,0.05);
+	background: rgba(255, 255, 255, 0);
 	content: '';
 }
 
@@ -254,7 +254,7 @@
 .simform .error-message {
 	padding: 0.4em 3.5em 0 0;
 	width: 100%;
-	color: rgba(0,0,0,0.7);
+	color: rgba(255, 255, 255, 0.603);
 	font-style: italic;
 	font-size: 0.4em;
 }
@@ -302,8 +302,8 @@
 	float: right;
 	padding: 10px 20px;
 	border: none;
-	background: rgba(0,0,0,0.3);
-	color: rgba(0,0,0,0.4);
+	background: #212121;
+	color: rgb(255, 255, 255);
 }
 
 .no-js .simform .controls {

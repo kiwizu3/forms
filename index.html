@@ -28,7 +28,7 @@
 								<span><label for="q1">What's your name?</label></span>
 								<input id="q1" name="q1" type="text"/>
 							</li>
-							<li>
+							<!-- <li>
 								<span><label for="q2">Where do you live?</label></span>
 								<input id="q2" name="q2" type="text"/>
 							</li>
@@ -43,10 +43,10 @@
 							<li>
 								<span><label for="q5">What book inspires you?</label></span>
 								<input id="q5" name="q5" type="text"/>
-							</li>
+							</li> -->
 							<li>
-								<span><label for="q6">What's your profession?</label></span>
-								<input id="q6" name="q6" type="text"/>
+								<span><label for="q6">Type in your wish</label></span>
+								<input placeholder="Thank you and wishing you the same ❤" id="q6" name="q6" type="text"/>
 							</li>
 						</ol><!-- /questions -->
 						<button class="submit" type="submit">Send answers</button>
@@ -83,7 +83,7 @@
 
 					// let's just simulate something...
 					var messageEl = theForm.querySelector( '.final-message' );
-					messageEl.innerHTML = 'Thank you! I\'ll be in touch.';
+					messageEl.innerHTML = "<h4> <strong>Thank you</strong> for your time ❤ </h4> <p>Kiwiyaaa</p>";
 					classie.addClass( messageEl, 'show' );
 				}
 			} );
