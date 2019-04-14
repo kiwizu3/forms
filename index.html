@@ -1,89 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wish Kiwi Now</title>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Wish Kiwiyaaa Now</title>
-	<meta name="description" content="Minimal Form Interface: Simplistic, single input view form" />
-	<meta name="keywords" content="form, minimal, interface, single input, big form, responsive form, transition" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="js/modernizr.custom.js"></script>
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
-
-
-
-
 <body>
-	<div class="container">
-
-		<header class="codrops-header">
-			<h1><span></span></h1>
-		</header>
-		<section>
-
-			<form id="theForm" class="simform" method="post" autocomplete="off" netlify>
-				<div class="simform-inner">
-					<ol class="questions">
-						<li>
-							<span><label for="name">What's your name? / ඔබගේ නම </label></span>
-							<input id="name" name="name" type="text" />
-						</li>
-						<li>
-							<span><label for="name">Type in your wish / සුබ පැතුම </label></span>
-							<input placeholder="Thank you and wishing you the same ❤" id="wish" name="wish" type="text" />
-						</li>
-					</ol><!-- /questions -->
-					<button class="submit" type="submit">Send answers</button>
-					<div class="controls">
-						<button class="next"></button>
-						<div class="progress"></div>
-						<span class="number">
-							<span class="number-current"></span>
-							<span class="number-total"></span>
-						</span>
-						<span class="error-message"></span>
-					</div><!-- / controls -->
-				</div><!-- /simform-inner -->
-				<span class="final-message"></span>
-			</form><!-- /simform -->
-		</section>
-
-	</div><!-- /container -->
-	
-	<script src="js/classie.js"></script>
-	<script src="js/stepsForm.js"></script>
-	<script>
-		var theForm = document.getElementById('theForm');
-
-		new stepsForm(theForm, {
-			onSubmit: function(form) {
-				// hide form
-				classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
-
-				/*
-				form.submit()
-				or
-				AJAX request (maybe show loading indicator while we don't have an answer..)
-				*/
-
-				// let's just simulate something...
-				var messageEl = theForm.querySelector('.final-message');
-				messageEl.innerHTML = "<h4> <strong>Thank you</strong> for your time ❤ </h4> <p>Kiwiyaaa</p>";
-				classie.addClass(messageEl, 'show');
 
 
-			}
-		});
-	</script>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" method="POST" netlify>
+				<span class="contact100-form-title">
+					Wish me back! :) 
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<input class="input100" id="name" type="text" name="name" placeholder="Name">
+					<label class="label-input100" for="name">
+						<span class="lnr lnr-user"></span>
+					</label>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Your wish is required">
+					<textarea class="input100" name="wish" placeholder="You wish here..."></textarea>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" type="submit">
+							Send Wish
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 
 
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 </body>
-
-
 </html>
