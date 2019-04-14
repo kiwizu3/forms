@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Wish Kiwi Now</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 </head>
+
 <body>
 
 
 	<div class="container-contact100">
-		<div class="wrap-contact100">
+		<div class="wrap-contact100 justify-content-center">
 			<form class="contact100-form validate-form" method="POST" netlify>
 				<span class="contact100-form-title">
-					Wish me back! :) 
+					Wish me back! :)
 				</span>
 
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<input class="input100" id="name" type="text" name="name" placeholder="Name">
+				<div class="wrap-input100 validate-input" data-validate="Name / නම is required">
+					<input class="input100" id="name" type="text" name="name" placeholder="Your Name / ඔබගේ නම">
 					<label class="label-input100" for="name">
 						<span class="lnr lnr-user"></span>
 					</label>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Your wish is required">
-					<textarea class="input100" name="wish" placeholder="You wish here..."></textarea>
+				<div class="wrap-input100 validate-input" data-validate="Your wish / සුබ පැතුම  is required">
+					<textarea class="input100" id="wish" name="wish" placeholder="You wish here... / සුබ පැතුම...."></textarea>
 				</div>
 
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
-						<button class="contact100-form-btn" type="submit">
+						<button id="buttonSubmit" class="contact100-form-btn" type="submit">
 							Send Wish
 						</button>
 					</div>
 				</div>
 			</form>
+			<div class="mt-3 text-right">
+					<small class="text-light">Powered by <a href="https://fb.com/kiwiyaaa">Kiwiyaaa</a></small>
+				</div>
+	
 		</div>
 	</div>
 
+	
 
-<!--===============================================================================================-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
 </body>
+
 </html>
